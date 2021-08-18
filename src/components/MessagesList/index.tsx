@@ -20,7 +20,7 @@ interface currentMember {
   real_name?: string;
 }
 
-export default function App() {
+export default function MessagesList() {
   const [dataLength, setDataLength] = useState(15);
   const [isRefreshing] = useState(false);
   const [isLoadingMore, setIsLoadingMore] = useState(false);

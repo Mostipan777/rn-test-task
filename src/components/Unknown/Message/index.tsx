@@ -13,7 +13,6 @@ const Message = ({item}: Record<string, any>, {members}: any) => {
   const currentMember: currentMember | any = members.find(
     (member: Record<string, string>) => member.id === item.user,
   );
-  console.log(members, item);
 
   return (
     <TouchableOpacity

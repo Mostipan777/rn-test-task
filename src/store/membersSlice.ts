@@ -1,4 +1,5 @@
 import {createSlice, createAsyncThunk} from '@reduxjs/toolkit';
+import {SlackToken} from '../../accessToken';
 
 export const fetchMembers = createAsyncThunk(
   'messages/fetchMembers',
@@ -9,7 +10,7 @@ export const fetchMembers = createAsyncThunk(
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
         },
-        body: 'channel=C029LB2FU83&token=xoxb-768554034544-2349831297248-Sipo50BAHOfSMMnlXgAcsBri',
+        body: `channel=C029LB2FU83&token=${SlackToken}`,
       });
       const data = await response.json();
       return data.members;
