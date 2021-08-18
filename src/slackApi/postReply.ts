@@ -8,7 +8,7 @@ const postReply = async (text: string, ts: string) => {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
       },
-      body: `channel=C029LB2FU83&token=${SlackToken}&text=${formatedText}&thread_ts=${ts}&pretty=1&pretty=1`,
+      body: `channel=C029LB2FU83&token=${SlackToken}&text=${formatedText}&thread_ts=${ts}&pretty=1`,
     });
   } catch (error) {
     console.log(error);
