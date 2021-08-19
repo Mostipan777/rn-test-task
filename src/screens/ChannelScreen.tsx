@@ -22,7 +22,7 @@ const ChannelScreen = () => {
       <StatusBar barStyle="light-content" />
       <KeyboardAvoidingView
         behavior="padding"
-        keyboardVerticalOffset={95}
+        keyboardVerticalOffset={90}
         style={theme.container}>
         <MessagesList />
         <Input
